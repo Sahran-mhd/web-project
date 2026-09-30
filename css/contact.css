@@ -1,62 +1,218 @@
-/* Contact Page Styles */
+/* General Page Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
     margin: 0;
     padding: 0;
+    color: #333;
 }
-.contact-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.contact-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
-.contact-container h2 {
+
+/* 1. Page Title Section */
+.page-title {
     text-align: center;
-    color: #333333;
+    margin-bottom: 50px;
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
     margin-bottom: 10px;
 }
-.contact-container p {
-    text-align: center;
-    color: #666666;
-    margin-bottom: 30px;
+
+.page-title p {
+    font-size: 1.1rem;
+    color: #666;
 }
+
+/* Desktop Layout: Two Columns */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* 2. Contact Information Section */
+.contact-info-section h2, 
+.contact-form-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 4px solid #007BFF;
+}
+
+.contact-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.contact-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.small-text {
+    font-size: 0.85rem;
+    color: #888 !important;
+}
+
+/* 3. Contact Form Section */
+.contact-form-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-intro {
+    margin-bottom: 25px;
+    color: #666;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
-    color: #333333;
+    font-weight: 600;
+    color: #333;
 }
+
 .form-group input,
+.form-group select,
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 15px;
     box-sizing: border-box;
+    font-family: inherit;
 }
+
 .form-group input:focus,
+.form-group select:focus,
 .form-group textarea:focus {
     border-color: #007BFF;
     outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
+
 button[type="submit"] {
     width: 100%;
     background-color: #007BFF;
-    color: #ffffff;
-    padding: 14px;
+    color: #fff;
+    padding: 15px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+/* 5. Map Section */
+.map-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.map-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.map-text {
+    color: #666;
+    font-style: italic;
+}
+
+/* 6. Quick Support Section */
+.quick-support {
+    text-align: center;
+    background: #eef2f5;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.quick-support h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.quick-support p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.support-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.call-btn {
+    background-color: #28a745;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .support-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
