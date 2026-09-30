@@ -10,7 +10,7 @@ This is a small team project developed using:
 
 ## Team Members
 
-### Member 1 — Home Page
+### Member 1 — Home Page (sahran)
 
 Responsible for:
 
@@ -27,7 +27,7 @@ feature/home-page
 
 ---
 
-### Member 2 — Header and Footer
+### Member 2 — Header and Footer (farhath)
 
 Responsible for:
 
@@ -45,7 +45,7 @@ feature/header-footer
 
 ---
 
-### Member 3 — Contact Page
+### Member 3 — Contact Page (Ayomi)
 
 Responsible for:
 
