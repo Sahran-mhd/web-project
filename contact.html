@@ -4,42 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Team Web Project</title>
-    <!-- Link to your specific contact page CSS -->
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 
-    <!-- Header will go here (Created by Member 2) -->
-    <!-- <div id="header"></div> -->
+    <!-- Header will go here (Member 2) -->
 
-    <main class="contact-container">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, please fill out the form below.</p>
+    <main class="contact-page">
+        
+        <!-- 1. Page Title Section -->
+        <section class="page-title">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you. Get in touch with us for questions, support, or any inquiries.</p>
+        </section>
 
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
+        <!-- Desktop Layout: Two columns (Info | Form) -->
+        <div class="contact-layout">
+            
+            <!-- 2. Contact Information Section -->
+            <section class="contact-info-section">
+                <h2>Contact Information</h2>
+                <div class="info-cards">
+                    <div class="contact-card">
+                        <h3>📞 Phone</h3>
+                        <p>+94 XX XXX XXXX</p>
+                        <p class="small-text">Available Monday–Saturday, 9:00 AM–6:00 PM</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>✉️ Email</h3>
+                        <p>info@yourwebsite.com</p>
+                        <p>support@yourwebsite.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>📍 Location</h3>
+                        <p>Colombo, Sri Lanka</p>
+                        <p class="small-text">Add your full business address if needed.</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>🕒 Business Hours</h3>
+                        <p>Monday–Friday: 9:00 AM–6:00 PM</p>
+                        <p>Saturday: 9:00 AM–2:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Send Us a Message Section -->
+            <section class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <p class="form-intro">Fill in the form below and our team will get back to you as soon as possible.</p>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number">
+                    </div>
+
+                    <!-- 4. Contact Reason / Subject Options -->
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" required>
+                            <option value="" disabled selected>Select a reason for contact</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Product Inquiry">Product Inquiry</option>
+                            <option value="Order Support">Order Support</option>
+                            <option value="Delivery Inquiry">Delivery Inquiry</option>
+                            <option value="Payment Inquiry">Payment Inquiry</option>
+                            <option value="Technical Support">Technical Support</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- 5. Map Section -->
+        <section class="map-section">
+            <h2>Find Us</h2>
+            <!-- Colombo, Sri Lanka Google Map Embed -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58407754987!2d79.7738032408564!3d6.921837363720003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <p class="map-text">Visit us at our location during business hours.</p>
+        </section>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+        <!-- 6. Quick Support Section -->
+        <section class="quick-support">
+            <h2>Need Quick Help?</h2>
+            <p>For urgent questions, contact us directly by phone or WhatsApp.</p>
+            <div class="support-buttons">
+                <a href="tel:+94XXXXXXXXX" class="btn call-btn">📞 Call Us</a>
+                <a href="https://wa.me/94XXXXXXXXX" target="_blank" class="btn whatsapp-btn">💬 WhatsApp Us</a>
             </div>
+        </section>
 
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
-            </div>
-
-            <button type="submit">Send Message</button>
-        </form>
     </main>
 
-    <!-- Footer will go here (Created by Member 2) -->
-    <!-- <div id="footer"></div> -->
+    <!-- Footer will go here (Member 2) -->
 
-    <!-- Link to your specific contact page JavaScript -->
     <script src="javascript/contact.js"></script>
 </body>
 </html>
